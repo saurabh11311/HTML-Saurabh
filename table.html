@@ -1,0 +1,99 @@
+<!-- html:5 ==> this is the shortcut also for this ...... -->
+
+
+<!-- Go to the googal and sherch to emmet table shortcut and in cheetsheet  'search table    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <!-- this part was bellow it was a css part  -->
+    <!-- "Tb{}" ==> this tag was a highlite a table  -->
+    <!--In table style text ko ek center me karne ke liye "text aling center " ka use karte hai  -->
+    <!-- IN "td, th" ==> isseme border ko 1px ke sath solid black ka matlab hai ki table to introduce karna  -->
+    <!--tr : nth-child(even) ==> it means only enen part ko highlight karna  -->
+    <!-- border-collapse means boeder ko maat dikaoo -->
+    <style>
+        table {
+            /* width: 100%; */
+            border-collapse: collapse;
+            text-align: center;
+           
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #8d6a6a;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- table>tr ==> "this is a table in row tag in this table  it means table ke annadar  table row craete karna " -->
+
+     <!-- <table>
+        <tr> </tr>
+     </table> -->
+
+     <!-- table>tr>th*3 ==> " this tag is 'th' means table heading and "*3" means table heading is 3 times  -->
+    <!-- table ke annadar bhi style ke through width ko adjest kar sakte hai -->
+      <table style="width: 100%;">
+        <colgroup>
+            <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>indai@gogal.com</td>
+        </tr>
+        <tr>
+            <td>United state of America </td>
+            <td>USA</td>
+            <td>usa@gogal.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JP</td>
+            <td>jp@gogal.com</td>
+        </tr>
+        <tr>
+            <td>Chian</td>
+            <td>CHN</td>
+            <td>chain@gogal.com</td>
+        </tr>
+      </table>
+
+      <!-- colspan="num"  ==> it means number of column ko add karna && rowspan like this  -->
+      <!-- read the rowspan   -->
+    <!-- go to googal and search table mdn html  -->
+
+    <hr>
+      <table>
+        <tr>
+            <th colspan="2">Country</th>
+            <td>India</td>
+            <td>Chain</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>IN</td>
+            <td>CHI</td>
+        </tr>
+      </table>
+      
+      
+</body>
+</html>
+
+
+
+<!-- Read the "tfoot" in mdn html in googal  -->
